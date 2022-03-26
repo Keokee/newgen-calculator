@@ -1,6 +1,4 @@
 body {
-  background-color: #222;
-  color: white;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -23,8 +21,8 @@ img {
   max-width: 15vw;
 }
 #adu-calculator {
+  background-color: #EEE;
   padding: 2em;
-  background-color: #333;
   width: 50%;
   margin-top: 4em;
 }
@@ -55,4 +53,19 @@ img {
 .output h2, .output h3 {
   display: block;
   flex: 1 0 100%;
+}
+.calc-selectors {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+.calc-selectors div {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.calc-selectors div:hover {
+  background-color: rgba(0,0,0,0.2);
 }
