@@ -13,7 +13,11 @@ const sqftPrices = {
   'detached': {
     0: 500,
     999: NaN
-  }
+  },
+  'garage': {
+    0: 500,
+    999: NaN
+  },
 }
 
 // Returns the value of the highest matching sqft cost
@@ -78,7 +82,7 @@ const changeCalculator = (selection) => {
   const label = aduCalculator.querySelector('.field-group label');
   const slider = aduCalculator.querySelector('input[type=range]');
 
-  label.textContent = selection.replace(/^./, match => match.toUpperCase())+' ADU';
+  label.textContent = selection.replace(/^./, match => match.toUpperCase()) + ' ADU Sqft';
   label.setAttribute('for', selection+'-sqft');
 
   slider.setAttribute('name', selection+'-sqft');
